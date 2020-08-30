@@ -1,0 +1,247 @@
+.page--main-banner__wrapper {
+    margin: 6rem auto 0 auto;
+    max-width: 120rem;
+    background: var(--yellow-color);
+}
+
+.main-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-space {
+    width: 18rem;
+    flex-shrink: 5;
+}
+
+.main-banner__left-side {
+    width: 46rem;
+    flex-shrink: 3;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-banner__small-text {
+    font-size: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    color: rgb(60, 63, 65);
+    /*width: 50rem;*/
+    font-weight: 600;
+    animation-name: movetoleft;
+    animation-duration: 2s;
+}
+
+.main-banner__main-text {
+    font-size: 6rem;
+    /*margin: 12rem 0;*/
+    animation-name: movetoright;
+    animation-duration: 2s;
+    font-weight: 500;
+}
+
+.main-banner__main-text span {
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+    /*color: rgb(60, 63, 65);*/
+}
+
+@keyframes movetoleft {
+    0% {
+        transform: translateX(-20rem);
+        -webkit-transform: translateX(-20rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes movetoright {
+    0% {
+        transform: translateX(12rem);
+        -webkit-transform: translateX(12rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-banner__small-text i {
+    width: 4rem;
+    font-size: 4rem;
+    color: red;
+    transition: color .3s;
+}
+
+.main-banner__small-text:hover,
+.main-banner__small-text i:hover {
+    color: rgb(106, 108, 109);
+    cursor: pointer;
+}
+
+.main-banner__right-side__photo {
+    height: 90rem;
+    width: 35rem;
+    position: relative;
+    top: 3rem;
+    right: 0;
+    margin-left: -10rem;
+    z-index: 5;
+}
+
+.main-banner_photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+/*tooltips*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 100;
+    bottom: 65%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*end of tooltips*/
+
+
+/*cv button*/
+
+.main-banner__button {
+    width: 16rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    background: linear-gradient(to right, rgb(60, 63, 65), rgb(106, 108, 109));
+    cursor: pointer;
+    animation: anim 1s 1s backwards;
+}
+
+.main-banner__button:hover {
+    background: linear-gradient(to left, rgb(60, 63, 65), rgb(106, 108, 109));
+}
+
+.main-banner__button:active {
+    transform: translateY(.2rem);
+}
+
+
+@media(max-width: 900px) {
+
+
+    .aside-space {
+        width: 8rem;
+    }
+}
+
+@media(max-width: 815px) {
+    .aside-space {
+        width: 4rem;
+    }
+
+
+    .main-banner__main-text {
+        width: 32rem;
+    }
+    .main-banner__right-side__photo {
+        margin-left: -20rem;
+    }
+}
+
+@media(max-width: 640px) {
+
+
+
+
+    .main-banner__main-text {
+        width: 26rem;
+        font-size: 5rem;
+    }
+
+    .aside-space {
+        display: none;
+    }
+    .main-banner__left-side {
+        padding-left: 3rem;
+        width: 30rem;
+    }
+}
+
+
+@media(max-width: 540px) {
+    .main-banner__main-text {
+        width: 22rem;
+        font-size: 4rem;
+    }
+
+    .main-banner__right-side__photo {
+        margin-left: -20rem;
+    }
+
+    .main-banner__main-text {
+        width: 22rem;
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .main-banner__right-side__photo {
+        height: 65rem;
+        width: 25rem;
+    }
+
+    .main-banner__main-text {
+        padding: 3rem 0;
+    }
+}
+
+
+
+

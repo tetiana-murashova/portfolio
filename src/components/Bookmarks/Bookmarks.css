@@ -1,0 +1,38 @@
+.bookmarks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    /* Safari */
+    position: fixed;
+    top: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 8;
+}
+
+.bookmarks__b1,
+.bookmarks__b2,
+.bookmarks__b3 {
+    width: 4rem;
+    height: 6rem;
+    margin: 0 .3rem .3rem 0;
+    position: relative;
+    box-shadow: 0 1rem 1rem;
+    cursor: pointer;
+}
+
+.bookmarks__b1 {
+    background-color: var(--yellow-color);
+    top: -.5rem;
+}
+
+.bookmarks__b2 {
+    background-color: var(--pink-color);
+    top: -1.9rem;
+}
+
+.bookmarks__b3 {
+    background-color: var(--green-color);
+    top: -1rem;
+}

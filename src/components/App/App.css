@@ -1,0 +1,155 @@
+.navigation--wrapper {
+  height: 6.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(60, 63, 65);
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+}
+
+.navigation {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.element--logo {
+  display: flex;
+  color: #eee;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  height: 6rem;
+  padding-left: 2rem;
+}
+
+.logo__yellow {
+  height: 100%;
+}
+
+.logo__red {
+  height: 93%;
+  display: none;
+}
+
+.logo__green {
+  height: 93%;
+  display: none;
+}
+
+.element--logo:hover {
+  padding-left: 3rem;
+  transition: padding-left .6s;
+}
+
+
+/*menu*/
+
+.menu-wrapper {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.open,
+.menu-link {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-left: 3rem;
+  padding: 1rem;
+}
+
+.open {
+  pointer-events: auto;
+}
+
+.open:hover {
+  background-color: #F8C200;
+  color: #333333;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  padding: 1.3rem;
+}
+
+.menu:hover {
+  pointer-events: auto;
+}
+
+.line {
+  width: 5rem;
+  height: .1rem;
+  margin-left: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  transition: width .5s;
+}
+
+.menu:hover .line::after {
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.menu-link {
+  text-decoration: none;
+  position: relative;
+  top: 5rem;
+  opacity: 0;
+}
+
+.menu:hover .menu-link {
+  top: 0;
+  opacity: 1;
+}
+
+.menu-link:nth-child(1) {
+  transition: top .5s .2s, opacity .5s .2s;
+}
+
+.menu-link:nth-child(2) {
+  transition: top .5s .1s, opacity .5s .1s;
+}
+
+.menu-link:nth-child(1):hover,
+.menu-link:nth-child(2):hover {
+  background-color: #F8C200;
+  color: #333333;
+}
+
+
+/*end of menu*/
+@media(max-width: 640px) {
+
+  .element--logo h5 {
+    display: none;
+  }
+}
+
+@media(max-width: 540px) {
+  .line {
+    display: none;
+  }
+
+
+}

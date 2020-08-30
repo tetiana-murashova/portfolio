@@ -1,0 +1,29 @@
+
+* {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --yellow-color: rgba(255, 201, 25, .9);
+    --pink-color: rgb(222, 137, 137);
+    --green-color: rgba(142, 201, 161, .9);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: rgb(106, 108, 109);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media(max-width: 640px) {
+    html {
+        font-size: 54%;
+    }
+}

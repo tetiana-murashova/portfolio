@@ -1,0 +1,35 @@
+
+/*social link*/
+
+.main-banner__social-icons-list {
+    list-style: none;
+    padding: 0;
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    animation: anim 1.3s 1.3s backwards;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: rgb(60, 63, 65);
+    transition: color .3s;
+}
+
+.social-link:hover {
+    color: rgb(106, 108, 109);
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* end of social link*/
