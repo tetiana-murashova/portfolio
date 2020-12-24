@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Banner from "../Banner/Banner";
+import Portfolio from "../Portfolio/Portfolio";
 
 function NavLogo() {
   return(
@@ -34,6 +35,7 @@ function App() {
         </div>
       </div>
           <Banner />
+          <Portfolio />
           </>
   );
 }

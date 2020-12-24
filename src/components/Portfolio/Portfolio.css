@@ -1,0 +1,13 @@
+
+.portfolio--section__wrapper {
+    max-width: 120rem;
+    background-color: var(--yellow-color);
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.portfolio--section__title {
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+}

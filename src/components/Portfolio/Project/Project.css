@@ -1,0 +1,118 @@
+
+.my-form {
+ display: inline;
+}
+
+.portfolio--content__wrapper {
+    max-width: 90rem;
+    background-color: #ddd;
+    margin: 10rem auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
+    padding: .1rem 3rem;
+}
+
+.portfolio--content__wrapper:hover {
+    background-color: #eee;
+}
+
+.portfolio--content__title {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}
+
+.portfolio--card-and-text {
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio--card-and-text__right {
+    flex-direction: row-reverse;
+}
+
+.portfolio--text {
+    width: 35rem;
+    font-size: 2rem;
+}
+
+.portfolio--view-detail-btn {
+    width: 15rem;
+    margin-top: 6rem;
+    padding: .7rem .5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgb(60, 63, 65);
+    background-color: rgba(255, 201, 25, .5);
+    border: .1rem solid rgb(60, 63, 65);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-arrow {
+    margin-left: .5rem;
+}
+
+.portfolio--view-detail-btn:hover .btn-arrow {
+    margin-left: 1.5rem;
+    transition: margin-left .5s;
+}
+
+
+/*portfolio 3d card*/
+
+.portfolio--card {
+    perspective: 80rem;
+    margin: 0 4rem 3rem 4rem;
+}
+
+.portfolio--card__frame {
+    border: 1rem solid rgb(60, 63, 65);
+    border-radius: 0.5rem;
+    transform-style: preserve-3d;
+}
+
+.portfolio--card__frame-left {
+    transform: rotateY(-40deg);
+    transition: all .4s;
+}
+
+.portfolio--card__frame-right {
+    transform: rotateY(40deg);
+    transition: all .4s;
+}
+
+.portfolio--card__content {
+    width: 40rem;
+    height: 20rem;
+    background-color: #34598f;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.portfolio--card__content img {
+    width: 100%;
+}
+
+.portfolio--card__content-left {
+    transform: rotateY(60deg) rotateX(20deg);
+    transition: all .4s;
+}
+
+.portfolio--card__content-right {
+    transform: rotateY(-60deg) rotateX(20deg);
+    transition: all .4s;
+}
+
+.portfolio--card:hover .portfolio--card__frame {
+    transform: rotateY(0);
+}
+
+.portfolio--card:hover .portfolio--card__content {
+    transform: rotateY(0) rotateX(0);
+    border-radius: 0;
+}
+
+
