@@ -7,7 +7,10 @@ class Portfolio extends Component {
         super(props);
         this.state={
             cards: [
-                {name:'Redesign and development of "IT company" Website', tools :'HTML, CSS and JavaScript'},
+                   {name:'Redesign and development of "IT company" Website',
+                    tools :'HTML, CSS and JavaScript',
+                    link: 'http://ditec-solutions-front-page.tania-m.com'
+                },
                 {name: 'Audi', year:2020},
                 {name:'Lada 9', year: 2001}
             ],
@@ -19,8 +22,18 @@ class Portfolio extends Component {
         return (
             <div id="portfolio" className="portfolio--section__wrapper">
                 <h2 className="portfolio--section__title">{this.state.pageTitle}</h2>
-                <Project name={this.state.cards[0].name} tools={this.state.cards[0].tools} />
-                <Project name={this.state.cards[1].name} tools={this.state.cards[1].tools} />
+
+                {this.state.cards.map((card, index) => {
+                    return(
+                    <Project
+                    key={index}
+                    name={card.name}
+                    tools={card.tools}
+                    link={card.link}
+                    />
+                    )}
+                )}
+
             </div>
         );
     }

@@ -10,7 +10,7 @@ class Project extends Component {
             <div className="portfolio--content__wrapper">
                 <h3 className="portfolio--content__title">{this.props.name}</h3>
                 <div className="portfolio--card-and-text">
-                    <a href="http://ditec-solutions-front-page.tania-m.com" target="_blank">
+                    <a href={this.props.link} target="_blank">
                         <div className="portfolio--card">
                             <div className="portfolio--card__frame portfolio--card__frame-left">
                                 <div className="portfolio--card__content portfolio--card__content-left">
@@ -23,7 +23,7 @@ class Project extends Component {
                         <p className="portfolio--text"> {this.props.tools} <br /><br /><br />
                         </p>
 
-                        <form className='my-form' action="http://ditec-solutions-front-page.tania-m.com"
+                        <form className='my-form' action={this.props.link}
                               method="get" target="_blank">
                             <button className="portfolio--view-detail-btn">
                                 VIEW DETAILS
