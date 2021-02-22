@@ -1,0 +1,128 @@
+/* Banner */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    perspective: 100rem;
+    overflow: hidden;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: scale 25s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner {
+    margin-left: 40px;
+}
+
+.screen {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 60%;
+
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    border: 0.5px solid black;
+    padding: 50px;
+    box-shadow: 5px 8px 20px #444;
+
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.my-photo {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: url("me.png");
+    background-size: cover;
+    flex-shrink: 0;
+
+}
+
+@media(max-width: 600px) {
+    .logo img {
+        width: 240px;
+    }
+
+    .banner {
+
+        /*top: 30%;*/
+        /*left: 12%;*/
+    }
+}
+
+.banner h1 {
+    font-size: 4.1rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p {
+    font-size: 1.6rem;
+    color: #fff;
+    width: 90%;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button{
+    width: 13rem;
+    height: 3rem;
+    background-color: #E3929B;
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(40rem) rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* End of banner */

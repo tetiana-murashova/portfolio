@@ -14,7 +14,7 @@ class Portfolio extends Component {
                 {name: 'Audi', year:2020},
                 {name:'Lada 9', year: 2001}
             ],
-            pageTitle: 'SOME OF MY PROJECTS'
+            pageTitle: 'Some of my projects'
 
         }
     }
@@ -22,7 +22,7 @@ class Portfolio extends Component {
         return (
             <div id="portfolio" className="portfolio--section__wrapper">
                 <h2 className="portfolio--section__title">{this.state.pageTitle}</h2>
-
+                <div className="underline"></div>
                 {this.state.cards.map((card, index) => {
                     return(
                     <Project

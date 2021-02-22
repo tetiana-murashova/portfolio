@@ -68,7 +68,7 @@
 }
 
 .open:hover {
-  background-color: #F8C200;
+  background-color: #E3929B;
   color: #333333;
 }
 
@@ -133,7 +133,7 @@
 
 .menu-link:nth-child(1):hover,
 .menu-link:nth-child(2):hover {
-  background-color: #F8C200;
+  background-color: #E3929B;
   color: #333333;
 }
 

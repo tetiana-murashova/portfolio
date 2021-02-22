@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import Banner from "../Banner/Banner";
 import Portfolio from "../Portfolio/Portfolio";
+import Banner2 from "../Banner2/Banner2";
+import About from "../About/About";
+
 
 function NavLogo() {
   return(
@@ -34,8 +37,14 @@ function App() {
           </div>
         </div>
       </div>
-          <Banner />
+
+
+          <Banner2 />
+          <About />
+          {/*<Banner />*/}
+
           <Portfolio />
+
           </>
   );
 }

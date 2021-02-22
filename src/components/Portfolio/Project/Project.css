@@ -4,7 +4,7 @@
 }
 
 .portfolio--content__wrapper {
-    max-width: 90rem;
+    max-width: 380px;
     background-color: #ddd;
     margin: 10rem auto;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
@@ -16,10 +16,14 @@
 }
 
 .portfolio--content__title {
-    text-align: center;
-    font-size: 4.5rem;
-    margin-top: 4rem;
-    margin-bottom: 7rem;
+    font-size: 3.1rem;
+    margin: 0 auto;
+    width: 350px;
+    font-weight: 300;
+    color: #5E3C40;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .portfolio--card-and-text {
@@ -39,17 +43,25 @@
 }
 
 .portfolio--view-detail-btn {
-    width: 15rem;
-    margin-top: 6rem;
-    padding: .7rem .5rem;
-    font-size: 1.2rem;
+    width: 13rem;
+    height: 3rem;
+    background-color: #E3929B;
+    border: none;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    color: rgb(60, 63, 65);
-    background-color: rgba(255, 201, 25, .5);
-    border: .1rem solid rgb(60, 63, 65);
-    outline: none;
+    color: #fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     cursor: pointer;
+
+    margin-right: 20px;
+    margin-top: 20px;
 }
+
+.portfolio--view-detail-btn:hover {
+    background-color: #9F9697;
+}
+
 
 .btn-arrow {
     margin-left: .5rem;

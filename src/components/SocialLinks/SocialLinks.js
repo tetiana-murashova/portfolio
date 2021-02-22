@@ -5,11 +5,7 @@ import './SocialLinks.css'
 const SocialLinks = () => {
     return(
         <div>
-            <a href="./my_resume.pdf" download>
-                <div className="main-banner__button">
-                    <i className="fas fa-download"></i> download cv
-                </div>
-            </a>
+
 
             <ul className="main-banner__social-icons-list">
                 <li>

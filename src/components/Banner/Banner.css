@@ -1,6 +1,6 @@
 .page--main-banner__wrapper {
     margin: 6rem auto 0 auto;
-    max-width: 120rem;
+    max-width: 100vw;
     background: var(--yellow-color);
 }
 

@@ -28,7 +28,7 @@ const Text = () => {
 const Banner = () => {
     return (
         <div className="page--main-banner__wrapper">
-                <Bookmarks />
+                {/*<Bookmarks />*/}
             <div className="main-banner">
 
                 <div className="aside-space"></div>
