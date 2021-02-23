@@ -1,8 +1,12 @@
 .wrapper {
     background-color: #eeeeee;
-    width: 100vw;
-    padding: 50px 30px;
+    width: 100%;
+    /*padding: 50px 30px;*/
     margin: 0 auto;
+}
+
+.wrapper-about-container {
+    padding: 50px 30px;
 }
 
 .wrapper h2 {
@@ -64,7 +68,24 @@
     justify-content: space-around;
 }
 
+@media(max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        width: 80%;
+    }
+}
+
 .about-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.social-link-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

@@ -17,7 +17,7 @@ class Project extends Component {
                                 </div>
                         </div>
                     </a>
-                    <div>
+                    <div className="portfolio--text-container">
                         <p className="portfolio--text"> {this.props.name} <br />
                             {this.props.tools}
                             <br /><br />

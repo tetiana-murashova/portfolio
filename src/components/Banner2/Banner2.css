@@ -41,7 +41,6 @@
     top: 25%;
     left: 15%;
     width: 60%;
-
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -49,10 +48,13 @@
     border: 0.5px solid black;
     padding: 50px;
     box-shadow: 5px 8px 20px #444;
-
     opacity: 0;
     animation: moveBanner 1s 0.5s forwards;
 }
+
+
+
+
 
 .my-photo {
     width: 200px;
@@ -68,17 +70,22 @@
     .logo img {
         width: 240px;
     }
-
-    .banner {
-
-        /*top: 30%;*/
-        /*left: 12%;*/
+    .screen {
+        top: 15%;
+        left: 5%;
+        flex-direction: column;
+        padding: 20px;
+        width: 80%;
     }
+    .banner {
+        margin-left: 0;
+    }
+
 }
 
 .banner h1 {
     font-size: 4.1rem;
-    font-weight: 300;
+    font-weight: 320;
     color: #fff;
     line-height: 5rem;
     letter-spacing: 0.2rem;

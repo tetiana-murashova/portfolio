@@ -4,9 +4,9 @@
 }
 
 .portfolio--content__wrapper {
-    max-width: 320px;
+    max-width: 300px;
     background-color: #ddd;
-    margin: 10rem auto;
+    margin: 10rem 2rem;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
     padding: .1rem 3rem;
 }
@@ -33,12 +33,16 @@
     flex-wrap: wrap;
 }
 
+.portfolio--text-container {
+    margin: 1rem;
+}
+
 .portfolio--card-and-text__right {
     flex-direction: row-reverse;
 }
 
 .portfolio--text {
-    width: 35rem;
+    width: 100%;
     font-size: 2rem;
 }
 
@@ -82,8 +86,8 @@
 
 
 .portfolio--card__content {
-    width: 38rem;
-    height: 28rem;
+    width: 36rem;
+    height: 25rem;
     background-color: #34598f;
     background-size: cover;
     border-radius: 0.5rem;

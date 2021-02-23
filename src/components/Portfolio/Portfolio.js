@@ -2,7 +2,14 @@ import React, {Component} from 'react';
 import './Portfolio.css'
 import Project from "./Project/Project";
 
-const front_page = require('./project_images/1.JPG');
+const horse = require('./project_images/work-1.png');
+const front_page = require('./project_images/work-7.png');
+const car_game = require('./project_images/work-2.png');
+const tic_tac = require('./project_images/work-4.png');
+const relax_app = require('./project_images/work-3.png');
+const ivan_school = require('./project_images/work-5.png');
+const roof_paint = require('./project_images/work-6.png');
+const epoxy_floor = require('./project_images/work-8.png');
 
 
 
@@ -14,7 +21,7 @@ class Portfolio extends Component {
                    {name:'Design and development in WordPress',
                     tools :'(WordPress)',
                     link: 'http://gallopinggroup.com/kfr/',
-                    images: front_page,
+                    images: horse,
                     alt: 'photo of horse'
                 },
                 {name:'Redesign and development of "IT company" Website',
@@ -24,45 +31,39 @@ class Portfolio extends Component {
                     alt: 'photo of IT office'
                 },
                 {name:'Design and development "Epoxy Floor" Website',
-                    tools :'(HTML, CSS and JavaScript)',
+                    tools :'(HTML, CSS, Bootstrap and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/floors/',
-                    images: front_page,
+                    images: epoxy_floor,
                     alt: 'photo of epoxy floor'
                 },
                 {name:'Design and development of "Roof Painting" Website',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/roof/',
-                    images: front_page,
+                    images: roof_paint,
                     alt: 'photo of roof'
-                },
-                {name:'Design and development "Epoxy Floor" Website',
-                    tools :'(HTML, CSS and JavaScript)',
-                    link: 'https://tetiana-murashova.github.io/floors/',
-                    images: front_page,
-                    alt: 'photo of epoxy floor'
                 },
                 {name:'Design and development "Ivan School" Website',
                     tools :'(Bootstrap and React.)',
                     link: 'https://school.tania-m.com',
-                    images: front_page,
+                    images: ivan_school,
                     alt: 'photo of child'
                 },
                 {name:'Car Game',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/car_game/',
-                    images: front_page,
+                    images: car_game,
                     alt: 'photo of car'
                 },
                 {name:'Relaxer App',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/relaxation-app/',
-                    images: front_page,
+                    images: relax_app,
                     alt: 'photo of meditation'
                 },
                 {name:'Tic-tac-toe',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/tic-tac-toe/ ',
-                    images: front_page,
+                    images: tic_tac,
                     alt: 'tic tac toe'
                 }
 

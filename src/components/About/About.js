@@ -6,6 +6,7 @@ const About = () => {
 
     return (
         <div className='wrapper'>
+            <div className="wrapper-about-container">
             <h2>About Me</h2>
             <div className="underline"></div>
             <h3>Front End Developer with primary focused on React</h3>
@@ -36,13 +37,13 @@ const About = () => {
 
                     </div>
                 </div>
-                <div>
+                <div className="social-link-container">
 
                   <SocialLinks />
                   <h3>Find me on social network</h3>
                 </div>
             </div>
-
+            </div>
 
         </div>
 );

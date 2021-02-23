@@ -22,9 +22,11 @@ const Banner2 = () => {
                             create a range of different websites based on
                             requirements and user experience.</p>
                         <div className="buttons">
-                        <button>Contact Me</button>
+                            <a href="mailto:murashovatania1@gmail.com" className="social-link">
+                                <button>Contact Me</button>
+                            </a>
                             <a href="./my_resume.pdf" download>
-                            <button>Download CV</button>
+                                <button>Download CV</button>
                             </a>
 
                         </div>
