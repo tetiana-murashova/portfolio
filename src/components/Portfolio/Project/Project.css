@@ -4,7 +4,7 @@
 }
 
 .portfolio--content__wrapper {
-    max-width: 380px;
+    max-width: 320px;
     background-color: #ddd;
     margin: 10rem auto;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
@@ -17,7 +17,7 @@
 
 .portfolio--content__title {
     font-size: 3.1rem;
-    margin: 0 auto;
+    margin: 20px;
     width: 350px;
     font-weight: 300;
     color: #5E3C40;
@@ -80,51 +80,22 @@
     margin: 0 4rem 3rem 4rem;
 }
 
-.portfolio--card__frame {
-    border: 1rem solid rgb(60, 63, 65);
-    border-radius: 0.5rem;
-    transform-style: preserve-3d;
-}
-
-.portfolio--card__frame-left {
-    transform: rotateY(-40deg);
-    transition: all .4s;
-}
-
-.portfolio--card__frame-right {
-    transform: rotateY(40deg);
-    transition: all .4s;
-}
 
 .portfolio--card__content {
-    width: 40rem;
-    height: 20rem;
+    width: 38rem;
+    height: 28rem;
     background-color: #34598f;
     background-size: cover;
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .portfolio--card__content img {
     width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-.portfolio--card__content-left {
-    transform: rotateY(60deg) rotateX(20deg);
-    transition: all .4s;
-}
 
-.portfolio--card__content-right {
-    transform: rotateY(-60deg) rotateX(20deg);
-    transition: all .4s;
-}
-
-.portfolio--card:hover .portfolio--card__frame {
-    transform: rotateY(0);
-}
-
-.portfolio--card:hover .portfolio--card__content {
-    transform: rotateY(0) rotateX(0);
-    border-radius: 0;
-}
 
 

@@ -8,26 +8,26 @@ class Project extends Component {
     render() {
         return (
             <div className="portfolio--content__wrapper">
-                <h3 className="portfolio--content__title">{this.props.name}</h3>
+                {/*<h3 className="portfolio--content__title">{this.props.name}</h3>*/}
                 <div className="portfolio--card-and-text">
                     <a href={this.props.link} target="_blank">
                         <div className="portfolio--card">
-                            <div className="portfolio--card__frame portfolio--card__frame-left">
-                                <div className="portfolio--card__content portfolio--card__content-left">
-                                    {/*<img src="resources/images/it.jpg" alt="picture of 3d printer">*/}
+                                <div className="portfolio--card__content">
+                                    <img src={this.props.images} alt={this.props.alt} />
                                 </div>
-                            </div>
                         </div>
                     </a>
                     <div>
-                        <p className="portfolio--text"> {this.props.tools} <br /><br /><br />
+                        <p className="portfolio--text"> {this.props.name} <br />
+                            {this.props.tools}
+                            <br /><br />
                         </p>
 
                         <form className='my-form' action={this.props.link}
                               method="get" target="_blank">
                             <button className="portfolio--view-detail-btn">
                                 VIEW DETAILS
-                                {/*<i className="fas fa-angle-double-right btn-arrow"></i>*/}
+                                <i className="fas fa-angle-double-right btn-arrow"></i>
                             </button>
                         </form>
 
