@@ -26,18 +26,18 @@
 }
 
 .logo__yellow {
-  height: 100%;
+  height: 93%;
 }
 
-.logo__red {
-  height: 93%;
-  display: none;
-}
+/*.logo__red {*/
+/*  height: 93%;*/
+/*  display: none;*/
+/*}*/
 
-.logo__green {
-  height: 93%;
-  display: none;
-}
+/*.logo__green {*/
+/*  height: 93%;*/
+/*  display: none;*/
+/*}*/
 
 .element--logo:hover {
   padding-left: 3rem;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner2.css'
 
-import SocialLinks from "../SocialLinks/SocialLinks";
+
 const Banner2 = () => {
 
 
