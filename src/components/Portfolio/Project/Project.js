@@ -18,10 +18,8 @@ class Project extends Component {
                         </div>
                     </a>
                     <div className="portfolio--text-container">
-                        <p className="portfolio--text"> {this.props.name} <br />
-                            {this.props.tools}
-                            <br /><br />
-                        </p>
+                        <h4 className="portfolio--text_title">{this.props.name}</h4>
+                        <p className="portfolio--text">{this.props.tools}</p>
 
                         <form className='my-form' action={this.props.link}
                               method="get" target="_blank">

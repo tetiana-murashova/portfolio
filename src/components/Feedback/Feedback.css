@@ -1,6 +1,6 @@
 
 .section-feedback {
-    max-width: 120rem;
+    width: 100%;
     padding: 6rem 0;
     margin: 0 auto;
     background-color: rgba(61, 63, 65, .5);
@@ -35,7 +35,7 @@
 
 .feedback-card__element {
     background-color: #dddddd;
-    width: 80%;
+    width: 70%;
     min-height: 18rem;
     display: flex;
     margin-bottom: 5rem;
