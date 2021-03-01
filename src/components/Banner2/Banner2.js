@@ -7,8 +7,7 @@ const Banner2 = () => {
 
 
     return (
-        <>
-            <header className="header">
+            <div className="header">
                 <div className="img-wrapper">
                     <img src={require("./workplace-2303851_1920.jpg")} alt="banner"/>
                 </div>
@@ -31,12 +30,8 @@ const Banner2 = () => {
 
                         </div>
                     </div>
-
                 </div>
-
-            </header>
-
-            </>
+            </div>
     );
 };
 
