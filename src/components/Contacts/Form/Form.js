@@ -66,7 +66,7 @@ const Form = () => {
                                    placeholder="Your answer.." required />
                             <label htmlFor="subject">Your message</label>
                             <textarea id="subject" name="subject" placeholder="Write something.."  required></textarea>
-                            <button type="button" onClick={submitToAPI}
+                            <button type="button" onClick={submitToAPI.bind(this)}
                                     className="contact-form__submit-btn">Submit
                             </button>
                         </form>
