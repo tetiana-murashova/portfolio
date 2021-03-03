@@ -5,6 +5,16 @@ import Portfolio from "../Portfolio/Portfolio";
 import Banner2 from "../Banner2/Banner2";
 import About from "../About/About";
 import Feedback from "../Feedback/Feedback";
+import Contacts from "../Contacts/Contacts";
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
+
 
 
 function NavLogo() {
@@ -22,7 +32,7 @@ function NavLogo() {
 
 function App() {
   return (
-      <>
+      <Router>
       <div className="navigation--wrapper">
         <div className="navigation">
           <NavLogo />
@@ -31,8 +41,8 @@ function App() {
               <div className="open">Menu</div>
               <div className="line"></div>
               <div className="nav-menu">
-                <a href="#" className="menu-link">Contact me</a>
-                <a href="#" className="menu-link">Portfolio</a>
+                  <Link to="/contacts" className="menu-link">Contact me</Link>
+                  <Link to="/portfolio" className="menu-link">Portfolio</Link>
               </div>
             </div>
           </div>
@@ -47,8 +57,22 @@ function App() {
           <Portfolio />
 
           <Feedback />
+          <Contacts />
 
-          </>
+
+
+          {/*<Switch>*/}
+          {/*    <Route path="/portfolio">*/}
+          {/*        <Portfolio />*/}
+          {/*    </Route>*/}
+          {/*    <Route path="/contacts">*/}
+          {/*        <Contacts />*/}
+          {/*    </Route>*/}
+
+          {/*</Switch>*/}
+
+
+          </Router>
   );
 }
 

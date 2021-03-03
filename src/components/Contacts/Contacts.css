@@ -1,0 +1,32 @@
+
+
+
+/*-----------------contact me*/
+
+.section-contacts__wrapper {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    padding: 10rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-contacts__title {
+    font-size: 4.1rem;
+    text-align: center;
+    font-weight: 320;
+    color: #000;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+
+}
+
+.section-contacts__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

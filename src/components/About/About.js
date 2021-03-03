@@ -2,16 +2,27 @@ import React from 'react';
 import './About.css'
 import SocialLinks from "../SocialLinks/SocialLinks";
 
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
+
 const About = () => {
 
     return (
+        <Router>
         <div className='wrapper'>
             <div className="wrapper-about-container">
             <h2>About Me</h2>
             <div className="underline"></div>
             <h3>Front End Developer with primary focused on React</h3>
 
-                <a href="./my_resume.pdf" download><h4>Download my resume</h4></a>
+                {/*<a href="./my_resume.pdf" download><h4>Download my resume</h4></a>*/}
+
+                <Link to="/files/my_resume.pdf" target="_blank" download>
+                    <h4>Download CV</h4>
+                </Link>
+
             <div className="about-container">
                 <div className="skills-container">
                     <div className="skills-left">
@@ -46,6 +57,7 @@ const About = () => {
             </div>
 
         </div>
+        </Router>
 );
 };
 

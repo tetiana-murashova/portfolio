@@ -41,7 +41,7 @@ class Feedback extends Component {
 
 
                     <div>
-                        <h2 className="section-feedback__title">FEEDBACK</h2>
+                        <h2 className="section-feedback__title">Feedback</h2>
                     </div>
                     {/*<p className="section-feedback__text">Feedback baced on Holmesglen Institute and customers</p>*/}
 
@@ -63,9 +63,6 @@ class Feedback extends Component {
                                     </div>
                                 )}
                             )}
-
-
-
 
 
 

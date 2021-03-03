@@ -1,0 +1,49 @@
+
+/*contact form */
+
+.contact-form__wrapper {
+    border-radius: 5px;
+    padding: 20px;
+    width: 40rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+    resize: vertical;
+    font-size: 1.5rem;
+}
+
+.contact-form__submit-btn {
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    margin: 1.2rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: rgb(60, 63, 65);
+    border: .2rem solid rgb(60, 63, 65);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, .2);
+    transition: all .2s;
+}
+
+.contact-form__submit-btn:hover {
+    background-color: #E3929B;
+}
+
+
+
+textarea {
+    height: 100px;
+}
+/*end of contact form */
