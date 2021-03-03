@@ -34,7 +34,7 @@ const Form = () => {
         };
 
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", " https://ykcnj9w206.execute-api.ap-southeast-2.amazonaws.com/prod/email");
+        xmlhttp.open("POST", "https://ykcnj9w206.execute-api.ap-southeast-2.amazonaws.com/prod");
         xmlhttp.setRequestHeader("Content-Type", "application/json");
         xmlhttp.send(JSON.stringify(data));
         xmlhttp.onreadystatechange = function() {
