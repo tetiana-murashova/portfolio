@@ -6,6 +6,7 @@ import Banner2 from "../Banner2/Banner2";
 import About from "../About/About";
 import Feedback from "../Feedback/Feedback";
 import Contacts from "../Contacts/Contacts";
+import Footer from "../Footer/Footer";
 
 import {
     BrowserRouter as Router,
@@ -13,6 +14,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
 
 
 
@@ -58,6 +60,7 @@ function App() {
 
           <Feedback />
           <Contacts />
+          <Footer />
 
 
 

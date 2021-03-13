@@ -1,0 +1,39 @@
+
+/*footer*/
+
+footer {
+    background-color: #15141b;
+    height: 6rem;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #111;
+    padding: 1.5rem 4rem;
+}
+
+.copyright-text {
+    font-size: 1.3rem;
+    color: #aaa;
+}
+
+.footer__text {
+    font-size: 1.4rem;
+    color: #bbb;
+}
+
+.footer__text i {
+    font-size: 2rem;
+    margin: .5rem;
+    color: tomato;
+}
+
+.footer__text span {
+    color: var(--yellow-color);
+}
+
+
+/*end of footer*/
