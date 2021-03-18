@@ -88,3 +88,15 @@
 
 
 }
+
+@media(max-width: 500px) {
+
+
+    .feedback-card__element {
+        flex-direction: column;
+        width: 38rem;
+    }
+
+
+
+}

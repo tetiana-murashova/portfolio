@@ -100,6 +100,10 @@
     padding-left: 2rem;
 }
 
+.contact-card__text a {
+    color: black;
+}
+
 .contact-card__address {
     padding-left: 1rem;
 }
@@ -151,7 +155,9 @@
     }
     .contact-card__email {
         padding-left: .5rem;
+
     }
+
     .contact-card__address {
         padding-left: .1rem;
     }

@@ -43,8 +43,8 @@ function App() {
               <div className="open">Menu</div>
               <div className="line"></div>
               <div className="nav-menu">
-                  <Link to="/contacts" className="menu-link">Contact me</Link>
-                  <Link to="/portfolio" className="menu-link">Portfolio</Link>
+                  <a href='#contacts' className="menu-link">Contact me</a>
+                  <a href='#portfolio' className="menu-link">Portfolio</a>
               </div>
             </div>
           </div>
@@ -56,10 +56,14 @@ function App() {
           <About />
 
 
-          <Portfolio />
+          <Portfolio id='portfolio' />
 
           <Feedback />
-          <Contacts />
+
+          <div id='contacts'>
+             <Contacts />
+          </div>
+
           <Footer />
 
 
