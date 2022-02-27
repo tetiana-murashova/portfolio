@@ -15,7 +15,7 @@ const About = () => {
             <div className="wrapper-about-container">
             <h2>About Me</h2>
             <div className="underline"></div>
-            <h3>Front End Developer with primary focused on React</h3>
+            <h3>Full stack Web Developer with primary focused on ReactJS and NodeJS</h3>
 
                 {/*<a href="./my_resume.pdf" download><h4>Download my resume</h4></a>*/}
 
@@ -26,25 +26,19 @@ const About = () => {
             <div className="about-container">
                 <div className="skills-container">
                     <div className="skills-left">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>Bootstrap</p>
-                        <p>SASS</p>
-                        <p>JavaScript</p>
-                        <p>React</p>
-
-                        <p>Browser <br />
-                            development tools</p>
+                        <p>ReactJS</p>
+                        <p>NodeJS</p>
+                        <p>GraphQL</p>
+                        <p>Git/Github</p>
+                        <p>Cypress</p>
+                   
                     </div>
                     <div className="skills-right">
-                        <p>jQuery</p>
+                        <p>HTML/CSS</p>
+                        <p>MaterialUI</p>
+                        <p>Bootstrap</p>
                         <p>SQL</p>
-                        <p>PHP</p>
-                        <p>WordPress</p>
                         <p>Git</p>
-
-                        <p>Adobe Design & <br />
-                            Dreamweaver</p>
 
                     </div>
                 </div>

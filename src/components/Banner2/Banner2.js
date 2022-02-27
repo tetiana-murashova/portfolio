@@ -21,10 +21,11 @@ const Banner2 = () => {
                     <div className="banner">
                         <h1>Tetiana Murashova</h1>
                         <p>Web Developer</p>
-                        <p>An experienced web developer with a passion for
-                            programming and analytics. A proven ability to
-                            create a range of different websites based on
-                            requirements and user experience.</p>
+                        <p>Full stack Web Developer with primary
+                            focused on ReactJS and NodeJS. A proven
+                            ability to create a range of different websites
+                            and apps based on requirements and user
+                            experience.</p>
                         <div className="buttons">
                             <a href="mailto:murashovatania1@gmail.com" className="social-link">
                                 <button>Contact Me</button>

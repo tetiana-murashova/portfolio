@@ -18,12 +18,12 @@ class Portfolio extends Component {
         super(props);
         this.state={
             cards: [
-                   {name:'Design and development in WordPress',
-                    tools :'(WordPress)',
-                    link: 'http://gallopinggroup.com/kfr/',
-                    images: horse,
-                    alt: 'photo of horse'
-                },
+                //    {name:'Design and development in WordPress',
+                //     tools :'(WordPress)',
+                //     link: 'http://gallopinggroup.com/kfr/',
+                //     images: horse,
+                //     alt: 'photo of horse'
+                // },
                 {name:'Redesign and development of "IT company" Website',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/DiTec-front_page/',
@@ -77,7 +77,7 @@ class Portfolio extends Component {
             <div id="portfolio" className="portfolio--section__wrapper">
                 <h2 className="portfolio--section__title">{this.state.pageTitle}</h2>
                 <div className="underline"></div>
-<div className="project-wrap">
+            <div className="project-wrap">
                 {this.state.cards.map((card, index) => {
                     return(
                     <Project
@@ -90,7 +90,7 @@ class Portfolio extends Component {
                     />
                     )}
                 )}
-</div>
+            </div>
 
             </div>
         );
