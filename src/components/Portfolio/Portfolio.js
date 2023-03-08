@@ -48,18 +48,18 @@ class Portfolio extends Component {
                     images: ivan_school,
                     alt: 'photo of child'
                 },
-                {name:'Car Game',
-                    tools :'(HTML, CSS and JavaScript)',
-                    link: 'https://tetiana-murashova.github.io/car_game/',
-                    images: car_game,
-                    alt: 'photo of car'
-                },
-                {name:'Relaxer App',
-                    tools :'(HTML, CSS and JavaScript)',
-                    link: 'https://tetiana-murashova.github.io/relaxation-app/',
-                    images: relax_app,
-                    alt: 'photo of meditation'
-                },
+                // {name:'Car Game',
+                //     tools :'(HTML, CSS and JavaScript)',
+                //     link: 'https://tetiana-murashova.github.io/car_game/',
+                //     images: car_game,
+                //     alt: 'photo of car'
+                // },
+                // {name:'Relaxer App',
+                //     tools :'(HTML, CSS and JavaScript)',
+                //     link: 'https://tetiana-murashova.github.io/relaxation-app/',
+                //     images: relax_app,
+                //     alt: 'photo of meditation'
+                // },
                 {name:'Tic-tac-toe',
                     tools :'(HTML, CSS and JavaScript)',
                     link: 'https://tetiana-murashova.github.io/tic-tac-toe/ ',
